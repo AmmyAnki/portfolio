@@ -18,7 +18,7 @@
     />
 
     <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="swiper-bundle.min.css">
 
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="/styles.css" />
@@ -359,14 +359,133 @@
             </div>
         </div>
 
-        <img src="image/Flowers-Pattern.svg" alt="qualification image" class="qualification"
+        <img src="image/Flowers-Pattern.svg" alt="qualification image" class="qualification__img">
       </section>
 
       <!--==================== SERVICES ====================-->
-      <section class="services section" id="services"></section>
+      <section class="services section" id="services">
+        <h2 class="section__title">Services</h2>
+        <span class="section__subtitle">What i offer</span>
+
+        <div class="services__conatiner container grid section__border">
+          <div class="services__card">
+            <i class="ri-layout-4-line"></i>
+
+            <h2 class="services__title">
+              SAP BASIS <br>
+              Consultant
+            </h2>
+
+            <p class="services__description">
+              Services that provides the best quality and at the 
+              request of the client,with professional
+              work and customer support.
+            </p>
+              
+            <div class="services__border"></div>
+          </div>
+
+          <div class="services__card">
+            <i class="ri-layout-4-line"></i>
+
+            <h2 class="services__title">
+              SAP Security <br>
+              Consultant
+            </h2>
+
+            <p class="services__description">
+              Services that provides the best quality and at the 
+              request of the client,with professional
+              work and customer support.
+            </p>
+              
+            <div class="services__border"></div>
+          </div>
+
+          <div class="services__card">
+            <i class="ri-quill-pen-line"></i>
+
+            <h2 class="services__title">
+              Website <br>
+              Design
+            </h2>
+
+            <p class="services__description">
+              Services that provides the best quality and at the 
+              request of the client,with professional
+              work and customer support.
+            </p>
+              
+            <div class="services__border"></div>
+          </div>
+        </div>
+      </section>
 
       <!--==================== PROJECTS ====================-->
-      <section class="projects section" id="projects"></section>
+      <section class="projects section" id="projects">
+        <h2 class="section__title"> Projects</h2>
+        <span class="section__subtitle"> Most recent work</span>
+          
+        <div class="container section__border">
+          <div class="projects__conatiner swiper">
+            <div class="swiper-wrapper">
+                 <!--==================== PROJECTS 1 ====================-->
+                  <div class="projects__content  swiper-slide">
+                    <img src="image/project-planning-header@2x.png" alt="projects image" class="projects__img">
+
+                    <div>
+                      <span class="projects__subtitle">Web</span>
+                      <h1 class="projects__title">Go Foddy</h1>
+
+                      <a href="#" class="projects__button">
+                        view demo <i class="ri-arrow-right-up-line"></i>
+                      </a>
+                    </div>
+                  </div>
+                       
+                  <!--==================== PROJECTS 2 ====================-->
+                  <div class="projects__content  swiper-slide">
+                    <img src="image/engineering-project-management.jpg" alt="projects image" class="projects__img">
+
+                    <div>
+                      <span class="projects__subtitle">Design</span>
+                      <h1 class="projects__title">Application</h1>
+
+                      <a href="#" class="projects__button">
+                        view demo <i class="ri-arrow-right-up-line"></i>
+                      </a>
+                    </div>
+                  </div>
+
+                  <!--==================== PROJECTS 3 ====================-->
+                  <div class="projects__content  swiper-slide">
+                    <img src="image/Project-schedule.jpg" alt="projects image" class="projects__img">
+
+                    <div>
+                      <span class="projects__subtitle">Web</span>
+                      <h1 class="projects__title">ECommerce Store</h1>
+
+                      <a href="#" class="projects__button">
+                        view demo <i class="ri-arrow-right-up-line"></i>
+                      </a>
+                    </div>
+                  </div>
+          </div>
+
+           <!-- swiper arrows -->
+          <div class="swiper-button-next">
+            <i class="ri-arrow-right-s-line"></i>
+          </div>
+
+          <div class="swiper-button-prev">
+            <i class="ri-arrow-left-s-line"></i>
+          </div>
+
+             <!-- swiper pagination -->
+          <div class="swiper swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
 
       <!--==================== TESTIMONIAL ====================-->
       <section class="testimonial section"></section>
@@ -384,7 +503,7 @@
     <script src=""></script>
 
     <!--=============== SWIPER JS ===============-->
-    <script src=""></script>
+    <script src="swiper-main.js"></script>
 
     <!--=============== EMAIL JS ===============-->
 
