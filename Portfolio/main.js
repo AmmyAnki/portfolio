@@ -59,7 +59,14 @@ breakpoints: {
 });
 
 /*=============== SWIPER TESTIMONIAL ===============*/
+let swiperTestimonial = new Swiper(".testimonial__container",{
+  grabCursor: true,
 
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 /*=============== EMAIL JS ===============*/
 const contactForm= document.getElementById('contact-form'),
       contactName= document.getElementById('contact-name'),
@@ -105,6 +112,25 @@ const sendEmail = (e) =>{
 
 contactForm.addEventListener('submit',sendEmail)
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+const sections = document.querySelectorAll('section[id]');
+
+const scrollActive = () => {
+  const scrollY = window.pageYOffset;
+
+  sections.forEach(current => {
+    const sectionHeight = current.offsetHeight;
+    const sectionTop = current.offsetTop - 58;
+    const sectionId = current.getAttribute('id');
+    const sectionsClass = document.querySelector('.nav__menu a[href*="' + sectionId + '"]');
+
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      sectionsClass.classList.add('active-link');
+    } else {
+      sectionsClass.classList.remove('active-link');
+    }
+  });
+};
+window.addEventListener('scroll',scrollActive)
 
 /*=============== SHOW SCROLL UP ===============*/
 
@@ -112,4 +138,4 @@ contactForm.addEventListener('submit',sendEmail)
 
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 
-/*=============== SCROLL REVEAL ANIMATION ===============*/
+/*=============== SCROLL REVEAL ANIMATION =============== */
